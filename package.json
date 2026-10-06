@@ -1,0 +1,16 @@
+{
+  "name": "hubspot-stripe-utm-attribution",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Keep campaign UTMs across HubSpot pages, get them back from Stripe Payment Links on the success page, and write them onto the payment record. Zero dependencies.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "audit-links": "node scripts/audit-payment-links.mjs",
+    "create-properties": "node scripts/create-properties.mjs",
+    "verify-properties": "node scripts/verify-properties.mjs"
+  }
+}
